@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Subscribe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f3f4f6;
+            font-family: Arial, sans-serif;
+        }
+
+        .subscribe-box {
+            width: 350px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .subscribe-box h2 {
+            margin-bottom: 15px;
+            font-size: 22px;
+            color: #333;
+        }
+
+        .subscribe-box p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .subscribe-box input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .subscribe-box button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .subscribe-box button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Hover message styles */
+        .hover-message {
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #007bff;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-size: 14px;
+            opacity: 0;
+            pointer-events: none; /* Prevent interaction */
+            transition: opacity 0.3s ease, top 0.3s ease;
+        }
+
+        .subscribe-box:hover .hover-message {
+            top: -60px; /* Move up on hover */
+            opacity: 1; /* Make it visible */
+        }
+    </style>
+</head>
+<body>
+    <div class="subscribe-box">
+        <div class="hover-message">Stay updated with our latest news!</div>
+        <h2>Subscribe to our Newsletter</h2>
+        <p>Get updates straight to your inbox.</p>
+        <input type="email" placeholder="Enter your email" required>
+        <button>Subscribe</button>
+    </div>
+</body>
+</html>

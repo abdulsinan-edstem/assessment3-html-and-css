@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        body{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(240, 245, 244);
+            height: 100vh;
+            font-family:  Arial, sans-serif;
+        }
+        form{
+            background-color: white;
+            box-shadow:0 4px 8px rgba(0,0,0,0.2);
+            width: 100%;
+            max-width: 400px;
+            padding: 15px;
+            border-radius: 15px;
+        }
+        label{
+            display: block;
+            margin-bottom: 10px;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        div{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        div a{
+            text-decoration: none;
+        }
+        div a:hover{
+            text-decoration: none;
+            color: rgb(20, 157, 231);
+        }
+        button{
+            padding:10px 20px;
+            background-color: rgb(98, 98, 196);
+            border-radius: 10px;
+            border: none;
+        }
+        button:hover{
+            background-color: rgb(83, 83, 249);
+            cursor: pointer;
+        }
+
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1>Login Form</h1>
+        <label>email:</label>
+        <input type="text" placeholder="enter your name">
+        <label>password:</label>
+        <input type="password" placeholder="password required">
+        <div>
+            <label>
+            <input type="checkbox">
+            Remember me</label>
+            <a href="#">forgot password?</a>
+        </div>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>

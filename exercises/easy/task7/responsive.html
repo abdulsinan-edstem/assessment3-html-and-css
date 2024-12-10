@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        header h1 {
+            font-size: 36px;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 16px;
+            color: #555;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(150px, 1fr));
+            gap: 15px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card h3 {
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+        }
+        .card p {
+            padding: 10px;
+            font-size: 14px;
+            color: #555;
+            text-align: center;
+        }
+        @media (min-width: 768px) and (max-width: 1024px) {
+            .grid-container {
+                grid-template-columns: repeat(3, minmax(150px, 1fr));
+            }
+        }
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(2, minmax(150px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore the World Through Images</h1>
+        <p>A curated gallery showcasing breathtaking sights and moments</p>
+    </header>
+    <div class="grid-container">
+        <div class="card">
+            <img src="beach.jpg" alt="Beach">
+            <h3>Beach</h3>
+            <p>Experience the serenity of the sea and the golden sands.</p>
+        </div>
+        <div class="card">
+            <img src="explore.jpg" alt="Explore">
+            <h3>Explore</h3>
+            <p>Embark on an adventure into the heart of the unknown.</p>
+        </div>
+        <div class="card">
+            <img src="face.jpg" alt="Face">
+            <h3>Face</h3>
+            <p>A portrait that captures emotions in their truest form.</p>
+        </div>
+        <div class="card">
+            <img src="garden.jpg" alt="Garden">
+            <h3>Garden</h3>
+            <p>Nature's masterpiece, a blend of vibrant flora and calmness.</p>
+        </div>
+        <div class="card">
+            <img src="road.jpg" alt="Road">
+            <h3>Road</h3>
+            <p>A winding path that promises stories at every turn.</p>
+        </div>
+        <div class="card">
+            <img src="mountains.jpg" alt="Mountains">
+            <h3>Mountains</h3>
+            <p>Standing tall, the guardians of the skies and earth.</p>
+        </div>
+    </div>
+</body>
+</html>
