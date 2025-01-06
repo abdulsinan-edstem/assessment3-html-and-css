@@ -183,10 +183,11 @@ th{
 }
 @media(max-width:725px){
     .firstcolumn{
-        width: 20rem;
+
+        width : 20rem;
 }
 .othercolumn{
-    width: 10rem;
+        width: 10rem;
 }
 ul{
     display: none;
