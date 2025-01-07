@@ -12,8 +12,8 @@ body{
     background-color: white;
     display: grid;
     grid-template-columns: 0.8fr 4fr;
-    grid-template-rows: 1fr 11fr;
-    margin: 5rem 10rem;
+    margin:2rem;
+
 }
 .section1{
     border-top: 0.15rem solid rgb(208, 209, 209);
@@ -117,10 +117,11 @@ h2{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    background-color: white;
     
 }
 .section4-2-1{
-    background-color: white;
+   
     display: flex;
     flex-direction: column;
     border: 0.08rem solid rgb(208, 209, 209) ;
@@ -164,3 +165,20 @@ a{
     border: 0.05rem solid  rgb(208, 209, 209);
     margin-right: 0.2rem;
 }
+@media (max-width:970px){
+    .container{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      margin:0;
+    }
+    .section3-1{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
+  }
+  span{
+      margin-top: 0rem;
+      padding: 0 0 0 0.8rem;
+  }}

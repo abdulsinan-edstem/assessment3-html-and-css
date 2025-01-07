@@ -15,15 +15,15 @@
     justify-content: space-between;
     padding-left: 0.5rem;
 }
-#strong{
+.strong{
     font-weight: 1000;
 }
 .icon{
-    width: 18px;
-    height: 18px;
+    width: 24px;
+    height: 24px;
     stroke: rgb(127, 133, 134);
 }
-#icons{
+.topicons{
     display: flex;
     align-items: center;
 }
@@ -38,7 +38,6 @@
 }
 .searchbar{
     display: flex;
-    align-items: center;
     align-items: center;
     border:solid 0.1rem rgb(127, 133, 134);
     border-radius: 0.5rem;
@@ -93,9 +92,7 @@ li{
     margin-bottom: 2rem;
     font-weight: 400;
 }
-.event{
-  background-color: white;
-}
+
 .confirmedevents{
     background-color: rgb(197, 221, 234);
     color:rgb(46, 96, 203);
@@ -105,8 +102,8 @@ li{
 .allevents{
     background-color: white;
     color:rgb(127, 133, 134);
-    border: solid 0.1rem rgb(218, 222, 226) ;
-    border-left: none;
+    border: solid 0.1rem rgb(200, 217, 235) ;
+    border-left:0;
     padding:0.4rem;
 }
 .eventlist{
@@ -119,6 +116,7 @@ li{
 .searchevent{
     margin:1rem;
     width: 20rem;
+    outline: none;
 }
 table{
    margin: 1rem; 
@@ -146,7 +144,7 @@ th{
     border-radius: 4rem;;
     padding:0.3rem;
 }
-@media (max-width:910px){
+@media (max-width:940px){
     .container{
         grid-template-columns: 1fr;
     }
@@ -176,14 +174,22 @@ th{
     margin:1rem;
     width: 15rem;
 }
+.firstcolumn{
+    width: 30rem;
 }
-@media(max-width:700px){
-    *{
-        font-size: smaller;
-    }
+.othercolumn{
+    width: 15rem;
 }
-@media(max-width:600px){
-    *{
-        font-size:xx-small;
-    }
+}
+@media(max-width:725px){
+    .firstcolumn{
+
+        width : 20rem;
+}
+.othercolumn{
+        width: 10rem;
+}
+ul{
+    display: none;
+ }
 }
